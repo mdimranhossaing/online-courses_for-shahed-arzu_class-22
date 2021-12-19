@@ -20,23 +20,96 @@ body {
 }
 
 .login-area .container {
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 270px;
   min-height: 300px;
   padding: 50px 30px;
-  background: linear-gradient(#6F5EBC, #91D3F9);
-  /* z-index: 9999; */
+  background: linear-gradient(#797FCD, #90D0F7, #87B3E8);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* .login-area .container::before {
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #7A84D0;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.user-icon i {
+  font-size: 4.5em;
+  color: #3135BB;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.login-form .field {
+  position: relative;
+}
+
+.login-form .field label {
   position: absolute;
-  left: 0;
-  top: 50%;
-  content: '';
-  width: 100%;
-  height: 200px;
-  background-color: relinear-gradient(#6F5EBC, #91D3F9)d;
-  transform: translateY(-50%);
-  box-shadow: 0 0 40px;
-  z-index: -1;
-} */
+  left: 10px;
+  top: 12px;
+}
+
+.login-form .field label i {
+  color: #6783DC;
+}
+
+.login-form .field input[type="text"],
+.login-form .field input[type="password"],
+.login-form .field input[type="submit"] {
+  padding: 15px;
+  padding-left: 45px;
+  box-sizing: border-box;
+  width: 250px;
+  border: none;
+}
+
+.login-form .field input::placeholder {
+  color: #6783DC;
+  text-transform: capitalize;
+}
+
+.login-form .field input:focus {
+  outline: none;
+}
+
+.checkbox-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  gap: 25px;
+}
+
+.checkbox-field label {
+  color: #fff;
+}
+
+.checkbox-field a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-form .field input[type="submit"] {
+  background-color: #3942C3;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  padding-left: 15px;
+}
