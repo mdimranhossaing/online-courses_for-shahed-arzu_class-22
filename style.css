@@ -1,0 +1,42 @@
+/* Google Fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#6F5EBC, #91D3F9);
+}
+
+.login-area .container {
+  /* position: relative; */
+  width: 270px;
+  min-height: 300px;
+  padding: 50px 30px;
+  background: linear-gradient(#6F5EBC, #91D3F9);
+  /* z-index: 9999; */
+}
+
+/* .login-area .container::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: '';
+  width: 100%;
+  height: 200px;
+  background-color: relinear-gradient(#6F5EBC, #91D3F9)d;
+  transform: translateY(-50%);
+  box-shadow: 0 0 40px;
+  z-index: -1;
+} */
